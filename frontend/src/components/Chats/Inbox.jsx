@@ -132,7 +132,7 @@ const Inbox = () => {
     }, [messages]);
 
     const handleTyping = (e) => {
-        setMessage(e.target.value);
+        setMessage(e.target.value);  
 
         if (!typing) {
             setTyping(true);

@@ -23,6 +23,8 @@ const SignUp = () => {
     });
 
     const { email, name, username, password } = user;
+    console.log(user);
+    
 
     const [avatar, setAvatar] = useState();
     const [avatarPreview, setAvatarPreview] = useState();

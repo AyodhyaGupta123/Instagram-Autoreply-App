@@ -11,6 +11,7 @@ const { deleteFile } = require('../utils/awsFunctions');
 exports.signupUser = catchAsync(async (req, res, next) => {
 
     const { name, email, username, password } = req.body;
+    
 
     const user = await User.findOne({
         $or: [{ email }, { username }]
